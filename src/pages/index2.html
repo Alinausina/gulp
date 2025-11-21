@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head> 
+
+<script src="./assets/js/okno.js"></script>
+<body>
+    @@include('../components/_dark-theme.html')
+    @@include('../components/_shap.html')
+
+
+    <div class="katalog">
+        <h> Каталог </h>
+    </div>
+
+    <section class="products-section">
+    <div class="products-container">
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo1.webp",
+        "alt": "Товар 1",
+        "title": "Сумка кожаная женская",
+        "price": "12 500 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo2.webp",
+        "alt": "Товар 2", 
+        "title": "Сумка вечерняя",
+        "price": "9 800 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo3.webp",
+        "alt": "Товар 3",
+        "title": "Клатч кожаный",
+        "price": "7 200 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo4.webp",
+        "alt": "Товар 4",
+        "title": "Рюкзак кожанный",
+        "price": "15 000 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo2.webp",
+        "alt": "Товар 5",
+        "title": "Кошелек женский",
+        "price": "3 500 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo4.webp",
+        "alt": "Товар 6",
+        "title": "Пояс кожаный",
+        "price": "2 800 ₽"
+        })
+        
+           @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo1.webp",
+        "alt": "Товар 1",
+        "title": "Сумка кожаная женская",
+        "price": "12 500 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo3.webp",
+        "alt": "Товар 2", 
+        "title": "Сумка вечерняя",
+        "price": "9 800 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo1.webp",
+        "alt": "Товар 3",
+        "title": "Клатч кожаный",
+        "price": "7 200 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo2.webp",
+        "alt": "Товар 4",
+        "title": "Рюкзак кожанный",
+        "price": "15 000 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo3.webp",
+        "alt": "Товар 5",
+        "title": "Кошелек женский",
+        "price": "3 500 ₽"
+        })
+        
+        @@include('../components/_product-card.html', {
+        "image": "./assets/images/photo4.webp",
+        "alt": "Товар 6",
+        "title": "Пояс кожаный",
+        "price": "2 800 ₽"
+        })
+
+    </div>
+
+    <div class="divider"></div>
+
+    @@include('../components/_footer.html')
+</section>
+<script src="assets/js/simple-theme.js"></script>
+</body>
+</html>

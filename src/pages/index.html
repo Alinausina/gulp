@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Три кармана - Галантерея</title>
+</head>
+<body>
+@@include('../components/_header.html')
+
+<!-- Подключаем компонент тёмной темы -->
+@@include('../components/_dark-theme.html')
+
+<div class="ocnov">
+    <picture>
+        <source media="(max-width: 767px)" srcset="./assets/images/ocnova2.webp">
+        <source media="(max-width: 1279px)" srcset="./assets/images/ocnova2.webp">
+        <img src="./assets/images/ocnova.webp" alt="Фон" class="main-bg-image">
+    </picture>
+    
+    <div class="ocnov-content">
+        <div class="ocnov-text">
+            Галантерея, где рождается элегантность. Ваш источник вдохновения для утонченного стиля
+        </div>
+        @@include('../components/_knopka_ocn.html')
+        
+    </div>
+</div>
+    @@include('../components/_txt_ocn.html')
+   <div class="photo">
+    <h1> У НАС МОЖНО ЗАКАЗАТЬ СУМКИ И АКСЕССУАРЫ</h1>
+    <div class="foto">
+        <div class="f1">
+            <!-- Адаптивное фото 1 -->
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/photo12.webp">
+                <source media="(max-width: 1279px)" srcset="./assets/images/photo12.webp">
+                <img src="./assets/images/photo1.webp" alt="Фото 1" div class="img_foto">
+            </picture>
+        </div>
+        <div class="f2">
+            <!-- Адаптивное фото 2 -->
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/photo22.webp">
+                <source media="(max-width: 1279px)" srcset="./assets/images/photo22.webp">
+                <img src="./assets/images/photo2.webp" alt="Фото 2" div class="img_foto">
+            </picture>
+        </div>
+        <div class="f3">
+            <!-- Адаптивное фото 3 -->
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/photo32.webp">
+                <source media="(max-width: 1279px)" srcset="./assets/images/photo32.webp">
+                <img src="./assets/images/photo3.webp" alt="Фото 3" div class="img_foto">
+            </picture>
+        </div>
+        <div class="f4">
+            <!-- Адаптивное фото 4 -->
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/photo42.webp">
+                <source media="(max-width: 1279px)" srcset="./assets/images/photo42.webp">
+                <img src="./assets/images/photo4.webp" alt="Фото 4" div class="img_foto">
+            </picture>
+        </div>
+    </div>
+</div>
+<div class="buttons-container">
+    @@include('../components/_knopka2.html')
+    @@include('../components/_knopka3.html')
+</div>
+    
+<div class="o_nas_section">
+    <div class="blue_background"></div> <!-- Отдельный синий блок -->
+    <div class="o_nas_container">
+        <div class="o_nas_content">
+            <!-- Фото по левую сторону -->
+            <div class="o_nas_img">
+                <!-- Адаптивное фото "О нас" -->
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/images/o_nas2.webp">
+                    <source media="(max-width: 1279px)" srcset="./assets/images/o_nas2.webp">
+                    <img src="./assets/images/o_nas.webp" alt="О нас">
+                </picture>
+            </div>
+            
+            <!-- Текст по правую сторону -->
+            <div class="o_nas_text">
+                <div class="text_container">
+                    <div class="zagol">
+                        <h2>Индивидуальная вышивка</h2>
+                    </div>
+                    <div class="tet">
+                        <p>Наши менеджеры помогут вам выбрать идеальный вариант вышивки, который будет иметь особое значение для вас.
+                        Мы можем вышить инициалы, памятную дату, мотивирующую фразу, ник в социальных сетях и многое другое.
+                        Сделайте ваше изделие уникальным и запоминающимся с нашей помощью!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="info">
+    <div class="info_txt1">
+        <h3>О нас</h3>
+    </div>
+    <div class="info_txt2">
+        <p>Три кармана — это галантерея, переосмысленная как искусство.
+            Мы создаем пространство, где каждая деталь становится выразительным акцентом,
+            а процесс творчества — моментом наслаждения.</p>
+    </div>
+    <div class="info_txt3">
+        <p>Люксовую фурнитуру для профессионалов<br>
+        Элегантные аксессуары для творчества<br>
+        Эксклюзивные материалы ограниченных серий</p>
+    </div>
+</div>
+
+    <div class="sete">
+    <div class="sete_text">
+        <div class="zagol">
+            <h4>Ещё больше в наших социальных сетях</h4>
+        </div>
+        <div class="sete_tet">
+            <div class="icon1">
+                <img src="./assets/images/instB.webp" alt="Instagram">
+            </div>
+            <div class="icon2">
+                <img src="./assets/images/VKB.webp" alt="VK">
+            </div>
+            <div class="icon3">
+                <img src="./assets/images/telegrB.webp" alt="Telegram">
+            </div>
+        </div>
+    </div>
+</div>
+
+    @@include('../components/_scrol.html')
+
+<section class="features-section">
+    <div class="features-container">
+        <!-- Левая колонка -->
+        <div class="features-column">
+            @@include('../components/_feature-card.html', {
+            "icon": "./assets/images/diamond.webp",
+            "alt": "Эксклюзивный дизайн", 
+            "title": "Эксклюзивный дизайн",
+            "text": "можно заказать персонализированное изделие, что делает ваши аксессуары по-настоящему уникальными"
+            })
+            
+            @@include('../components/_feature-card.html', {
+            "icon": "./assets/images/guarant.webp",
+            "alt": "Гарантия качества",
+            "title": "Гарантия качества", 
+            "text": "мы тщательно проверяем каждое изделие перед отправкой, чтобы вы получили только самое лучшее."
+            })
+        </div>
+        
+        <!-- Правая колонка -->
+        <div class="features-column">
+            @@include('../components/_feature-card.html', {
+            "icon": "./assets/images/car.webp", 
+            "alt": "Быстрая доставка",
+            "title": "Быстрая доставка",
+            "text": "отправка заказов по всей стране с возможностью отслеживания посылки"
+            })
+            
+            @@include('../components/_feature-card.html', {
+            "icon": "./assets/images/klas.webp",
+            "alt": "Удобство покупки",
+            "title": "Удобство покупки", 
+            "text": "интуитивно понятный сайт и разнообразные способы оплаты для вашего максимального комфорта"
+            })
+        </div>
+    </div>
+</section>
+
+<div class="otzivi">
+<div>@@include('../components/_otziv.html', {
+            "title": "Екатерина К.",
+            "data": "18 ноября",
+            "text": "Отличный магазин с большим выбором стильных аксессуаров. Заказ оформился быстро, доставка была оперативной. Товары пришли в отличном состоянии, качество радует. Обязательно буду заказывать еще"
+            })
+</div>
+<div>@@include('../components/_otziv.html', {
+            "title": "Анастасия Б.",
+            "data": "20 января",
+            "text": "Замечательный магазин с разнообразием галантерейных изделий. Заказ оформили без проблем, доставка заняла немного времени, но было того стоит. Товары отличного качества, выглядят как на фото. Обязательно вернусь сюда снова!"
+            })
+</div>
+<div>@@include('../components/_otziv.html', {
+            "title": "Мария Ф.",
+            "data": "05 марта",
+            "text": "Порадовал большой выбор аксессуаров и удобный сайт. Заказ прошел быстро, доставка была своевременной. Товары соответствуют описанию и выглядят очень качественно. Спасибо за отличный сервис!"
+            })
+</div>
+</div>
+
+@@include('../components/_footer.html')
+
+<script src="./assets/js/scrol.js"></script>
+<script src="assets/js/simple-theme.js"></script>
+
+</body>
+</html>

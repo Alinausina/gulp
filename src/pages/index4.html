@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+<script src="./assets/js/okno.js"></script>
+<body>
+    @@include('../components/_dark-theme.html')
+     @@include('../components/_shap.html')
+        <div class="containerr">
+        <div class="description">
+            Оставьте заявку, и мы свяжемся с вами в ближайшее время и ответим на все интересующие вас вопросы
+        </div>
+        
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Фамилия и Имя" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" placeholder="Номер телефона" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" placeholder="E-mail" required>
+            </div>
+            
+            <div class="checkbox-group">
+                <div class="checkbox">
+                    <input type="checkbox" id="agreement" required>
+                    <label for="agreement" class="checkbox-label">
+                        Я согласен (-а) на обработку персональных данных в соответствии с Политикой
+                    </label>
+                </div>
+            </div>
+            
+            <div class="submit-btn-container">
+                <button type="submit" class="submit-btn">оставить заявку</button>
+            </div>
+        </form>
+        
+        <div class="social-text">
+            Мы всегда на связи в наших социальных сетях
+        </div>
+        @@include('../components/_iconka.html')
+        <div class="kart">
+            <img src="./assets/images/karta.webp">
+        </div>
+    </div>
+    <script src="assets/js/simple-theme.js"></script>
+</body>
+</html>

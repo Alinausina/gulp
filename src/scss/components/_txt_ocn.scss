@@ -1,0 +1,42 @@
+.values-list {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    list-style: none;
+    font-size: 18px;
+    margin-left: -40px;
+}
+
+.values-list li{
+    color: #9EC0DF;
+    margin-top: 8px;
+    font-weight: bolder;
+}
+
+/* Tablet: 768–1279px */
+@media (max-width: 1279px) and (min-width: 768px) {
+    .values-list {
+        gap: 28px;
+        font-size: 16px;
+        margin-left: -20px;
+    }
+    
+    .values-list li {
+        margin-top: 6px;
+    }
+}
+
+/* Mobile: ≤767px */
+@media (max-width: 767px) {
+    .values-list {
+        gap: 15px;
+        font-size: 14px;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .values-list li {
+        margin-top: 4px;
+    }
+}

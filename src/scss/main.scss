@@ -1,0 +1,1034 @@
+// ==== 1. Utils ====
+@use 'utils/variables';
+
+// ==== 2. Base styles ====
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/layout';
+
+// ==== 3. Layout ====
+@use 'layout/container';
+
+// ==== 4. Components ====
+@use 'components/button';
+@use 'components/card';
+@use 'components/header';
+@use 'components/knopka_ocn';
+@use 'components/txt_ocn';
+@use 'components/knopka2';
+@use 'components/knopka3';
+@use 'components/scrol';
+@use 'components/footer';
+@use 'components/feature-card';
+@use 'components/shap';
+@use 'components/product-card';
+@use 'components/iconka';
+@use 'components/otziv';
+@use 'components/dark-theme';
+
+
+body {
+  background-color: #F6F5F1;
+  width: 1280px;
+  background-image: url('./assets/images/ocnova.webp');
+}
+.ocnov {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ocnov img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ocnov-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    max-width: 500px;
+}
+
+.ocnov-text {
+    font-size: 35px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    color: #6c4d38;
+    font-weight: 300;
+    margin-left: -88px;
+    font-weight: bolder;
+}
+.otzivi{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.photo h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #6c4d38;
+    letter-spacing: .9px;
+    margin-left: 350px;
+    -webkit-text-stroke-width: 1px;
+    margin-top: 150px;
+}
+.foto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.f1, .f2, .f3, .f4 {
+    flex: 1;
+    height: 400px;
+}
+
+.foto img {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.foto img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+ box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    padding: 30px 20px;
+    margin-top: 120px;
+    margin-left: 140px;
+}
+
+.o_nas_section {
+    position: relative;
+    padding: 140px 0;
+}
+
+.blue_background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1504px;
+    height: 346px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.o_nas_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2; 
+}
+
+.o_nas_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.text_container {
+    padding: 0; 
+    margin-left: -132px;
+}
+
+.o_nas_img {
+    flex: 0 0 45%;
+}
+
+.o_nas_img img {
+    width: 78%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.o_nas_text {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.zagol {
+    text-align: left; 
+    margin-bottom: 15px;
+}
+
+.zagol h2 {
+    margin: 0;
+    color: #6c4d38;
+    font-size: 45px;
+}
+
+
+.tet {
+    text-align: left; 
+}
+
+.tet p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 28px;
+}
+
+.info {
+    position: relative;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 3px;
+    margin-top: -65px;
+}
+
+.info_txt1 h3 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #9EC0DF;
+    text-align: left;
+}
+
+.info_txt2 {
+    margin-top: 30px; 
+    width: 100%;
+}
+
+.info_txt2 p {
+    font-size: 35px;
+    color: #6c4d38;
+    line-height: 1.6;
+    display: block;
+    margin-left: 150px;
+}
+
+
+.info_txt3 {
+    margin-top: 40px; 
+    max-width: 800px;
+}
+
+.info_txt3 p {
+    font-size: 33px;
+    color: rgb(108, 77, 56);
+    line-height: 1.8;
+    display: block;
+    width: 95%;
+    margin-left: 430px;
+}
+
+.sete_text {
+    background: #9ec0df;
+    padding: 34px 0px;
+    text-align: center;
+    color: #fff;
+    margin-top: 140px;
+}
+
+.zagol h4 {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.sete_tet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.icon1, .icon2, .icon3 {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.sete_tet img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1); 
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover {
+    transform: scale(1.1);
+}
+
+.icon1:hover img {
+    filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(280deg); 
+}
+
+.icon2:hover img {
+    filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(200deg); 
+}
+
+.icon3:hover img {
+    filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(180deg); 
+}
+
+.features-section {
+    padding: 80px 0;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.features-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+    max-width: 450px;
+}
+
+.katalog {
+    position: relative;
+    padding: 62px 42px;
+    margin: 28px 0;
+    width: 100%;
+}
+
+.katalog h {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 700;
+    color: #6c4d38;
+    margin: -19px 23px 0;
+    padding: 0 30px 0 0;
+    position: relative;
+    z-index: 2;
+}
+a{
+    text-decoration: none;
+}
+
+.katalog::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #6c4d38;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-top: 45px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 44px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 28px 72px;
+    justify-items: center;
+}
+
+.product-card {
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 299px;
+    height: 518px;
+}
+
+.divider {
+    width: 100%;
+    height: 3px;
+    background: #6C4D38;
+    margin: 40px 0;
+}
+
+   
+.container {
+    max-width: 913px;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+        
+        h1 {
+            text-align: left;
+            color: #6C4D38;
+            font-size: 45px;
+            margin-bottom: 44px;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+        
+        .section {
+            margin-bottom: 15px;
+        }
+        
+.section-title {
+    color: #6c4d38;
+    font-size: 37px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 58px;
+}
+        
+.section-content {
+    color: #6c4d38;
+    font-size: 30px;
+    line-height: 1.3;
+    margin-left: 57px;
+    text-align: left;
+}
+        
+.bold-title {
+    color: #6c4d38;
+    font-size: 37px;
+    margin-bottom: 9px;
+    font-weight: 700;
+    text-align: left;
+}
+        
+.line-spacing {
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+        .containerr {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+.description {
+    text-align: left;
+    margin-bottom: 60px;
+    font-size: 35px;
+    line-height: 1.4;
+    width: 1000px;
+    margin-top: 100px;
+    margin-left: -325px;
+    color: #6c4d38;
+    margin-top: 185px
+}      
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+input[type=email], input[type=tel], input[type=text] {
+    width: 100%;
+    padding: 15px 240px 20px 173px;
+    border: 3px solid #87ceeb;
+    border-radius: 50px;
+    font-size: 19px;
+    background-color: #fff;
+    color: #6c4d38;
+    margin-left: -325px;
+}
+
+        
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-left: -325px;
+    margin-top: 80px;
+}
+        
+.checkbox input[type="checkbox"] {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid#6c4d38;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+}
+        
+        .checkbox input[type="checkbox"]:checked {
+            background-color: #6c4d38;
+        }
+        
+        .checkbox input[type="checkbox"]:checked::after {
+            content: '✓';
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .checkbox-label {
+            font-size: 25px;
+            line-height: 1.4;
+            color:#6c4d38;
+        }
+        
+        .submit-btn-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+.submit-btn {
+    background-color: #6c4d38;
+    color: #fff;
+    border: none;
+    padding: 23px 30px;
+    font-size: 23px;
+    border-radius: 54px;
+    cursor: pointer;
+    width: 920px;
+    margin-left: -328px;
+    margin-top: 69px;
+}
+        
+.social-text {
+    text-align: left;
+    font-size: 33px;
+    color: #6c4d38;
+    margin-top: 40px;
+    margin-left: -316px;
+    font-weight: bolder;
+}
+
+.kart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.kart img {
+    display: block;
+    margin-top: 75px;
+    margin-left: -118px;
+}
+
+/* Tablet: 768–1279px */
+@media (max-width: 1279px) {
+    body {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        margin-left: 150;
+    }
+    
+    .ocnov {
+        height: 70vh;
+    }
+    
+    .ocnov-content {
+        left: 5%;
+        max-width: 400px;
+    }
+    
+    .ocnov-text {
+        font-size: 28px;
+        margin-left: -15px;
+        margin-bottom: 15px;
+    }
+    
+    .photo h1 {
+        margin-top: 100px;
+        display: grid;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .foto {
+        gap: 15px;
+        display: flex;
+    }
+    
+    .f1, .f2, .f3, .f4 {
+        flex: 1 1 calc(50% - 15px);
+        height: 300px;
+        min-width: 250px;
+    }
+    
+    .buttons-container {
+        margin-left: 14px;
+        gap: 30px;
+        padding: 20px;
+        margin-top: 100px;
+    }
+    
+    .blue_background {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .text_container {
+        margin-left: -80px;
+    }
+    
+    .zagol h2 {
+        font-size: 38px;
+    }
+    
+    .tet p {
+        font-size: 24px;
+    }
+    
+    .info {
+        margin-top: -40px;
+        padding: 0 20px;
+    }
+    
+    .info_txt1 h3 {
+        font-size: 48px;
+    }
+    
+    .info_txt2 p1 {
+        font-size: 28px;
+        margin-left: 80px;
+    }
+    
+    .info_txt3  {
+        font-size: 24px;
+        margin-left: -200px;
+        width: 72%;
+    }
+    
+    .sete_text {
+        margin-top: 100px;
+        padding: 25px 0;
+    }
+    
+    .zagol h4 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .sete_tet {
+        gap: 30px;
+    }
+    
+    .icon1, .icon2, .icon3 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .features-container {
+        gap: 40px;
+        padding: -3 30px;
+    }
+    
+    .features-column {
+        gap: 30px;
+    }
+    
+    .katalog {
+        padding: 50px 30px;
+        margin: 20px 0;
+    }
+    
+    .katalog h {
+        font-size: 42px;
+        margin: -15px 15px 0;
+        padding: 0 20px 0 0;
+    }
+    
+    .katalog::before {
+        margin-top: 35px;
+    }
+    
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 20px 40px;
+    }
+    
+    .product-card {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        min-height: 450px;
+    }
+    
+    .container {
+        max-width: 90%;
+        margin-top: 80px;
+    }
+    
+    h1 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    
+    .section-title, .bold-title {
+        font-size: 32px;
+    }
+    
+    .section-content {
+        font-size: 26px;
+        margin-left: 30px;
+    }
+    
+    .description {
+        font-size: 28px;
+        width: 700px;
+        margin-left: -100px;
+        margin-top: 150px;
+    }
+    
+    input[type=email], input[type=tel], input[type=text] {
+        padding: 15px 39px 20px 100px;
+        margin-left: -96px;
+        font-size: 17px;
+    }
+    
+    .checkbox {
+        margin-left: -200px;
+        margin-top: 60px;
+        gap: 35px;
+    }
+    
+    .checkbox input[type="checkbox"] {
+        width: 45px;
+        height: 35px;
+    }
+    
+    .checkbox-label {
+        font-size: 22px;
+        margin-left: 40px;
+    }
+    
+    .submit-btn {
+        width: 622px;
+        margin-left: -100px;
+        margin-top: 50px;
+        padding: 22px 52px;
+        font-size: 21px;
+    }
+    
+    .social-text {
+        font-size: 28px;
+        margin-left: -75px;
+    }
+    
+    .kart img {
+        margin-left: -60px;
+        margin-top: 60px;
+    }
+    
+    .otzivi {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile: ≤767px */
+@media (max-width: 767px) {
+    body {
+        width: 100%;
+        max-width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .ocnov {
+        height: 50vh;
+    }
+    
+    .ocnov-content {
+        left: 13%;
+        right: 53%;
+        max-width: none;
+        transform: translateY(-50%);
+    }
+    
+    .ocnov-text {
+        font-size: 24px;
+        margin-left: -72;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    
+    .otzivi {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .photo h1 {
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: 60px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    .foto {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .f1, .f2, .f3, .f4 {
+        flex: 1 1 100%;
+        height: 250px;
+        width: 100%;
+    }
+
+    .img_foto{
+         z-index: 0;
+        float: right;
+        position: relative;
+        height: 250px;
+        width: 445px;
+    }
+    
+    .buttons-container {
+        margin-left: 0;
+        gap: 90px;
+        padding: 9px 0px;
+    }
+    
+    .o_nas_section {
+        padding: 80px 0;
+    }
+    
+    .blue_background {
+        width: 114%;
+        height: auto;
+        min-height: 200px;
+    }
+    
+    .o_nas_content {
+        gap: 30px;
+    }
+    
+    .text_container {
+        margin-left: 0;
+        padding: 0 0px;
+    }
+    
+    .o_nas_img {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    
+    .o_nas_img img {
+        width: 90%;
+    }
+    
+    .o_nas_text {
+        flex: 1 1 100%;
+    }
+    
+    .zagol h2 {
+        font-size: 28px;
+    }
+    
+    .tet p {
+        font-size: 18px;
+        padding: -1px 1px;
+    }
+    
+    .info {
+        margin-top: -30px;
+        padding: 0 15px;
+    }
+    
+    .info_txt1 h3 {
+        font-size: 32px;
+    }
+    
+    .info_txt2 p1 {
+        font-size: 24px;
+        margin-left: 91px;
+        line-height: 1.4;
+    }
+    
+    .info_txt3 {
+        font-size: 16px;
+        margin-left: -200px;
+        width: 67%;
+        line-height: 1.4;
+    }
+    
+    .sete_text {
+        margin-top: 60px;
+        padding: 20px 0;
+    }
+    
+    .zagol h4 {
+        font-size: 22px;
+        margin-bottom: 25px;
+        padding: 0 15px;
+    }
+    
+    .sete_tet {
+        gap: 25px;
+    }
+    
+    .icon1, .icon2, .icon3 {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .features-container {
+        gap: 25px;
+        padding: 0 15px;
+    }
+    
+    .features-column {
+        max-width: 100%;
+        gap: 20px;
+    }
+    
+    .katalog {
+        padding: 30px 20px;
+        margin: 15px 0;
+    }
+    
+    .katalog h {
+        font-size: 28px;
+        margin: -10px 10px 0;
+        padding: 0 15px 0 0;
+    }
+    
+    .katalog::before {
+        margin-top: 25px;
+    }
+    
+    .products-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px 20px;
+    }
+    
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        min-height: 400px;
+        margin: 0 auto;
+    }
+    
+    .divider {
+        margin: 25px 0;
+    }
+    
+    .container {
+        max-width: 95%;
+        margin-top: 50px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .bold-title, .section-title {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-left: 24px;
+    }
+    
+    .section-content {
+        font-size: 20px;
+        margin-left: 53px;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+    
+    .description {
+        font-size: 30px;
+        width: 456px;
+        margin-left: 0;
+        margin-top: 85px;
+        padding: 0 15px;
+        line-height: 1.4;
+    }
+    
+    .containerr {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    input[type=email], input[type=tel], input[type=text] {
+        width: 70%;
+        padding: 12px 65px;
+        margin-left: 0;
+        font-size: 24px;
+        box-sizing: border-box;
+    }
+    
+    .checkbox {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .checkbox input[type=checkbox] {
+        width: 35px;
+        height: 35px;
+        margin-left: -640px;
+    }
+    
+    .checkbox-label {
+        font-size: 18px;
+        margin-left: 52px;
+        margin-top: -50px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 30px;
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    
+    .social-text {
+        font-size: 18px;
+        margin-top: 25px;
+        padding: 0 15px;
+        margin-left: -1px;
+    }
+    
+    .kart img {
+        margin-left: 0;
+        margin-top: 40px;
+        width: 95%;
+        max-width: 400px;
+    }
+}
+

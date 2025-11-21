@@ -1,0 +1,211 @@
+// ==== ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ ====
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #F6F5F1;
+  border: 2px solid #B8A08A;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  .theme-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+  }
+}
+
+// ==== ТЁМНАЯ ТЕМА ====
+body.dark-theme {
+  background-color: #2D2D2D;
+  
+  // Основной контент
+  .ocnov-text {
+    color: #6c4d38
+  }
+  
+  .photo h1 {
+    color: #F6F5F1;
+  }
+  
+  .zagol h2 {
+    color: #F6F5F1;
+  }
+  
+  .tet p {
+    color: #F6F5F1;
+  }
+  
+  .info_txt1 h3 {
+    color: #B8A08A;
+  }
+  
+  .info_txt2 p1,
+  .info_txt3 p1 {
+    color: #F6F5F1;
+  }
+  
+  .sete_text {
+    background: #B8A08A;
+  }
+  
+  .zagol h4 {
+    color: #2D2D2D;
+  }
+  
+  // Каталог и продукты
+  .katalog h {
+    color: #F6F5F1;
+  }
+  
+  .katalog::before {
+    background: #F6F5F1;
+  }
+  
+  .product-card {
+    background: #3D3D3D;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .divider {
+    background: #F6F5F1;
+  }
+  
+  // Текст контента
+  h1 {
+    color: #6c4d38;
+  }
+  
+  .section-title,
+  .bold-title {
+    color: #F6F5F1;
+  }
+  
+  .section-content {
+    color: #F6F5F1;
+  }
+  
+  .description {
+    color: #F6F5F1;
+  }
+  
+  // Формы
+  input[type=email],
+  input[type=tel],
+  input[type=text] {
+    border: 3px solid #B8A08A;
+    background-color: #3D3D3D;
+    color: #F6F5F1;
+    
+    &::placeholder {
+      color: #B8A08A;
+    }
+  }
+  
+  .checkbox-label {
+    color: #F6F5F1;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    border: 2px solid #F6F5F1;
+  }
+  
+  .checkbox input[type="checkbox"]:checked {
+    background-color: #F6F5F1;
+  }
+  
+  .submit-btn {
+    background-color: #B8A08A;
+    color: #2D2D2D;
+  }
+  
+  .social-text {
+    color: #F6F5F1;
+  }
+  
+  // Синий фон в секции "О нас"
+  .blue_background {
+    background-color: #3D3D3D;
+  }
+  
+  // Переключатель темы в тёмном режиме
+  .theme-switcher {
+    background: #2D2D2D;
+    border-color: #F6F5F1;
+    
+    .theme-icon {
+      color: #F6F5F1;
+    }
+  }
+  
+  // Карточки преимуществ
+  .feature-card {
+    background: #3D3D3D !important;
+    
+    .feature-title {
+      color: #F6F5F1 !important;
+    }
+    
+    .feature-text {
+      color: #B8A08A !important;
+    }
+  }
+  
+  // Отзывы
+  .otziv-card {
+    background: #3D3D3D !important;
+    
+    .otziv-title,
+    .otziv-date,
+    .otziv-text {
+      color: #F6F5F1 !important;
+    }
+  }
+  
+  // Ховер эффекты для изображений
+  .foto img:hover {
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  // Иконки соцсетей
+  .sete_tet img {
+    filter: brightness(0) invert(0.8);
+  }
+  
+  .icon1:hover img {
+    filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(280deg);
+  }
+  
+  .icon2:hover img {
+    filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(200deg);
+  }
+  
+  .icon3:hover img {
+    filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(180deg);
+  }
+}
+
+// Адаптивность для переключателя темы
+@media (max-width: 767px) {
+  .theme-switcher {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    
+    .theme-icon {
+      font-size: 20px;
+    }
+  }
+}

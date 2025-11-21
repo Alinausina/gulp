@@ -1,0 +1,137 @@
+.bloc4 {
+    display: inline-block;
+}
+
+.bloc4 .button {
+    display: inline-block;
+    background: #6C4D38; 
+    border: 2px solid #6C4D38;
+    border-radius: 50px;
+    padding: 15px 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.bloc4 .button p {
+    color: white; 
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.bloc4 .button:hover {
+    background: transparent; 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 77, 56, 0.3);
+    background-color: rgb(255, 255, 255);
+}
+
+.bloc4 .button:hover p {
+    color: #6C4D38; 
+}
+
+.bloc4 .button:active {
+    transform: translateY(-1px);
+}
+
+/* Тёмная тема */
+body.dark-theme {
+    .bloc4 .button {
+        background: #B8A08A;
+        border: 2px solid #B8A08A;
+    }
+    
+    .bloc4 .button:hover {
+        background: transparent;
+        background-color: #3D3D3D;
+    }
+    
+    .bloc4 .button:hover p {
+        color: #B8A08A;
+    }
+    
+    .bloc4 .button p {
+        color: #2D2D2D;
+    }
+}
+
+/* Tablet: 768–1279px */
+@media (max-width: 1279px) and (min-width: 768px) {
+    .bloc4 .button {
+        padding: 13px 30px;
+    }
+    
+    .bloc4 .button p {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+    }
+}
+
+/* Mobile: ≤767px */
+@media (max-width: 767px) {
+    .bloc4 {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 15px; /* Добавляем отступ между кнопками на мобильных */
+    }
+    
+    .bloc4 .button {
+        padding: 12px 25px;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .bloc4 .button p {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+    }
+    
+    /* Отключаем сложные ховер-эффекты на мобильных */
+    .bloc4 .button:hover {
+        background: #6C4D38;
+        transform: none;
+        box-shadow: none;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .bloc4 .button:hover p {
+        color: white;
+    }
+    
+    /* Добавляем активное состояние для мобильных */
+    .bloc4 .button:active {
+        background: #5a4030;
+        transform: scale(0.98);
+    }
+    
+    /* Тёмная тема для мобильных */
+    body.dark-theme {
+        .bloc4 .button:hover {
+            background: #B8A08A;
+        }
+        
+        .bloc4 .button:active {
+            background: #9c8875;
+        }
+    }
+}
+
+/* Для больших экранов */
+@media (min-width: 1280px) {
+    .bloc4 .button {
+        padding: 16px 40px;
+    }
+    
+    .bloc4 .button p {
+        font-size: 17px;
+    }
+}

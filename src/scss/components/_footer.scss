@@ -1,0 +1,107 @@
+footer {
+    color: #fff;
+    padding: 7px 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 82px;
+}
+
+.txt_footer {
+    flex: 1;
+    max-width: 400px;
+}
+
+.txt_footer p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #6c4d38;
+    margin: 0;
+    white-space: pre-line; 
+}
+
+.logo_footer {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+}
+
+/* Тёмная тема */
+body.dark-theme {
+    footer {
+        background-color: #2D2D2D;
+    }
+    
+    .txt_footer p {
+        color: #F6F5F1;
+    }
+}
+
+/* Tablet: 768–1279px */
+@media (max-width: 1279px) and (min-width: 768px) {
+    footer {
+        padding: 7px 100px;
+        margin-top: 70px;
+    }
+    
+    .txt_footer {
+        max-width: 350px;
+    }
+    
+    .txt_footer p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    .logo_footer {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Mobile: ≤767px */
+@media (max-width: 767px) {
+    footer {
+        padding: 20px 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        margin-top: 60px;
+    }
+    
+    .txt_footer {
+        flex: none;
+        max-width: 100%;
+        order: 2;
+    }
+    
+    .txt_footer p {
+        font-size: 16px;
+        line-height: 1.5;
+        white-space: normal;
+    }
+    
+    .logo_footer {
+        width: 60px;
+        height: 60px;
+        order: 1;
+    }
+}
+
+/* Для больших экранов */
+@media (min-width: 1280px) {
+    footer {
+        padding: 7px 250px;
+        margin-top: 90px;
+    }
+    
+    .txt_footer p {
+        font-size: 22px;
+    }
+    
+    .logo_footer {
+        width: 90px;
+        height: 90px;
+    }
+}
