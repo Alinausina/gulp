@@ -11,7 +11,6 @@
 <body>
 @@include('../components/_header.html')
 
-<!-- Подключаем компонент тёмной темы -->
 @@include('../components/_dark-theme.html')
 
 <div class="ocnov">
@@ -34,7 +33,6 @@
     <h1> У НАС МОЖНО ЗАКАЗАТЬ СУМКИ И АКСЕССУАРЫ</h1>
     <div class="foto">
         <div class="f1">
-            <!-- Адаптивное фото 1 -->
             <picture>
                 <source media="(max-width: 767px)" srcset="./assets/images/photo12.webp">
                 <source media="(max-width: 1279px)" srcset="./assets/images/photo12.webp">
@@ -42,7 +40,6 @@
             </picture>
         </div>
         <div class="f2">
-            <!-- Адаптивное фото 2 -->
             <picture>
                 <source media="(max-width: 767px)" srcset="./assets/images/photo22.webp">
                 <source media="(max-width: 1279px)" srcset="./assets/images/photo22.webp">
@@ -50,7 +47,6 @@
             </picture>
         </div>
         <div class="f3">
-            <!-- Адаптивное фото 3 -->
             <picture>
                 <source media="(max-width: 767px)" srcset="./assets/images/photo32.webp">
                 <source media="(max-width: 1279px)" srcset="./assets/images/photo32.webp">
@@ -58,7 +54,6 @@
             </picture>
         </div>
         <div class="f4">
-            <!-- Адаптивное фото 4 -->
             <picture>
                 <source media="(max-width: 767px)" srcset="./assets/images/photo42.webp">
                 <source media="(max-width: 1279px)" srcset="./assets/images/photo42.webp">
@@ -73,12 +68,10 @@
 </div>
     
 <div class="o_nas_section">
-    <div class="blue_background"></div> <!-- Отдельный синий блок -->
+    <div class="blue_background"></div> 
     <div class="o_nas_container">
         <div class="o_nas_content">
-            <!-- Фото по левую сторону -->
             <div class="o_nas_img">
-                <!-- Адаптивное фото "О нас" -->
                 <picture>
                     <source media="(max-width: 767px)" srcset="./assets/images/o_nas2.webp">
                     <source media="(max-width: 1279px)" srcset="./assets/images/o_nas2.webp">
@@ -86,7 +79,6 @@
                 </picture>
             </div>
             
-            <!-- Текст по правую сторону -->
             <div class="o_nas_text">
                 <div class="text_container">
                     <div class="zagol">
@@ -141,7 +133,6 @@
 
 <section class="features-section">
     <div class="features-container">
-        <!-- Левая колонка -->
         <div class="features-column">
             @@include('../components/_feature-card.html', {
             "icon": "./assets/images/diamond.webp",
@@ -158,7 +149,6 @@
             })
         </div>
         
-        <!-- Правая колонка -->
         <div class="features-column">
             @@include('../components/_feature-card.html', {
             "icon": "./assets/images/car.webp", 
